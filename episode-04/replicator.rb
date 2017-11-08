@@ -3,7 +3,7 @@ class Replicator
   # When the Enterprise calls Replicator.new, this method executes.
   def initialize(enterprise)
 
-    # Setup an accessor so we can access other parts of the Enterprise from this instance.
+   # Setup an accessor so we can access other parts of the Enterprise from this instance.
     @enterprise = enterprise
 
     # Setup the inside of the replicator. This is where the drink is made.
@@ -104,6 +104,7 @@ class Replicator
 
   # This transports ingredients into the glass.
   def transport_ingredients_to_glass
+    # binding.pry
 
     # Abort if there is no glass inside the replicator.
     return unless glass_inside_replicator
@@ -114,7 +115,7 @@ class Replicator
       @enterprise.transporter.energize(
         # Geordi is in a jokey mood and
         # reprograms the replicator
-        @enterprise.pantry.find_ingredient('banana'),
+        @enterprise.pantry.find_ingredient(ingredient_name),
         @enterprise.pantry.shelf,
         glass_inside_replicator.inside
       )

@@ -11,7 +11,7 @@ class Ingredient
         Episode.new.recipe.ingredients
       end
     other_ingredients = ['banana', 'apple', 'orange']
-
+    require 'pry'
     [episode_recipe_ingredients + other_ingredients].flatten.uniq
   end
 

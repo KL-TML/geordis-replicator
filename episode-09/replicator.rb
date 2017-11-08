@@ -170,7 +170,8 @@ class Replicator
     # If successful, @enterprise.reactor.core will now be empty
     # and @inside_replicator will once again contain the glass.
     # transport_glass_from_reactor
-
+    transport_glass_from_reactor
+    
   end
 
   def transport_glass_to_reactor

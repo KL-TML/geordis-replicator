@@ -8,7 +8,7 @@ class Cupboard
     @shelf = Location.new
     stock_shelf
   end
-
+# require 'pry'
   def shelf
     @shelf
   end

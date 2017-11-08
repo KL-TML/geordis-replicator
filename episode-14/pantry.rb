@@ -8,7 +8,7 @@ class Pantry
   def initialize
     @shelf = Location.new
     stock_shelf
-    tribbles_eat_food
+    # tribbles_eat_food
   end
 
   def shelf
@@ -23,9 +23,9 @@ class Pantry
     end
   end
 
-  def tribbles_eat_food
-    @shelf.contents.size.times { @shelf.contents.pop }
-  end
+  # # def tribbles_eat_food
+  #   @shelf.contents.size.times { @shelf.contents.pop }
+  # end
 
   def find_ingredient(name)
     @shelf.contents.find { |item| item.name == name }
